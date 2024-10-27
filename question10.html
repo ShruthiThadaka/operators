@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Write a program that calculates the total score of a student based on three input scores:
+
+        Add the scores using arithmetic operators.
+        
+        Use a ternary operator to check if the total score is 60 or above to display "Passed" or "Failed."
+        
+        Use assignment operators to add bonus points (5) to the total score if it’s below 60, then recheck if the student has passed or failed after applying the bonus.
+        
+        </h3>
+
+        <script>
+            var score1 = parseInt(prompt("Enter your marks in sub1:"));
+            var score2 = parseInt(prompt("Enter your marks in sub2:"));
+            var score3 = parseInt(prompt("Enter your marks in sub3:"));
+            totalScore = score1+score2+score3;
+            console.log(`Total score of a student = ${totalScore}`);
+            totalScore>=60?console.log("Passed"):console.log("Failed");
+            totalScore<60 ?
+            totalScore+=5 : console.log();
+            totalScore>=60?console.log("passed"):console.log("failed")
+        </script>
+</body>
+</html>
